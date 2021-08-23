@@ -5,6 +5,7 @@
     padding: 0;
 }
 .menu{
+    /* position: fixed; */
     list-style: none;
   margin: 40px 0 5px;
   padding: 25px 0 5px;
@@ -70,6 +71,8 @@ img{
     object-fit: cover;
 }
 h1{
+    line-height: 230px;
+    background: rgba(112, 112, 112, 0.2);
     cursor: default;
     font-family: 'Comfortaa', cursive;
     color: antiquewhite;
@@ -106,7 +109,7 @@ h1{
     overflow: hidden;
     position: relative;
     display: block;
-    width: 25%;
+    width: 50%;
     float: left;
 }
 .product img{
@@ -120,4 +123,54 @@ h1{
 }
 .product:hover img{
     transform: scale(1.1);
+}
+.contactsInfo{
+    /* font-family: 'Comfortaa' solid; */
+    counter-reset: li; 
+    list-style: none; 
+    font-size: 30px;
+    padding: 39px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.contactsInfo a{
+    cursor: default;
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #DAD2CA;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: .3s;
+    font-family: 'Comfortaa', cursive;
+}
+.contactsInfo a:hover{
+    background: #E9E4E0;
+}
+.contactsInfo a:hover:before {
+    transform: rotate(360deg);
+}
+.contactsInfo a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background: #8FD4C1;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid white;
+text-align: center;
+font-weight: bold;
+border-radius: 2em;
+transition: all .3s ease-out;
+}
+h4{
+    margin-top: 20px;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
 }
