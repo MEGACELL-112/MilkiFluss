@@ -9,7 +9,7 @@
     z-index: 999999999999;
     /* position: fixed; */
     list-style: none;
-  margin: 16px 0 0px;
+  /* margin: 16px 0 0px; */
   padding: 25px 10px 16px;
   text-align: center;
   background: white;
@@ -66,7 +66,7 @@ ul{
 .logo{
     text-align: center;
 }   
-img{
+.product img{
     /* border: none; */
     height: 800px;
     width: 100%;
@@ -128,6 +128,9 @@ h1{
     transform: scale(1.1);
 }
 .contactsInfo{
+    margin-left: 4px;
+    display: inline-block;
+    width: 50%;
     /* font-family: 'Comfortaa' solid; */
     counter-reset: li; 
     list-style: none; 
@@ -171,9 +174,61 @@ font-weight: bold;
 border-radius: 2em;
 transition: all .3s ease-out;
 }
+.obrash{
+    display: inline-block;
+    width: 40%;
+    height: 300px;
+    background-color: tomato;
+}
+p{
+    color: #9d999d;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 0.3em;
+    padding-top: 15%;
+    font-size: 30px;
+    /* line-height: 550px; */
+    padding-right: 15px;
+    padding-left: 35px;
+    margin-top: 54px;
+    /* padding: 30px; */
+    background-color: #f0e2e0;
+    height: 648px;
+    /* margin-top: 6%; */
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+}
 h4{
     margin-top: 20px;
     font-size: 60px;
     text-align: center;
     font-family: 'Comfortaa', cursive;
 }
+.productPart{
+    background: tomato;
+}
+.productInfo{
+    background: royalblue;
+}
+.productInfo section{
+    background: rgb(240, 155, 94);
+    width: 500px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.productInfo img{
+    vertical-align: middle;
+}
+.productTitle{
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+}
+p{
+    font-family: 'Jost', sans-serif;
+}
+.productCards a{
+    font-family: 'Jost', sans-serif;
+}
+/* .sectionProducts img{
+    width: 100px;
+} */
